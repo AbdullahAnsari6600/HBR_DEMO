@@ -59,7 +59,7 @@ const projects = [
     description:
       "HBR-World collaborated with PBC, NAFCO, Ramah Aluminum, and Nawafeth Metal Industrial Factory to deliver high-quality aluminum glass frames across Saudi Arabia. We handled precise design, fabrication, and installation tailored for residential, commercial, and industrial needs.",
       scope: ["Frame design", "Aluminum fabrication", "Glass installation", "Structural detailing"],
-    image: "/pro6.jpg",
+    image: "/pro6.webp",
   },
   {
     id: 7,
