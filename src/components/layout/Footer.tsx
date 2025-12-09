@@ -1,39 +1,43 @@
-import { Link } from 'react-router-dom';
-import { 
-  Phone, 
-  Mail, 
-  MapPin, 
-  Facebook, 
-  Twitter, 
-  Linkedin, 
+import { Link } from "react-router-dom";
+import {
+  Phone,
+  Mail,
+  MapPin,
+  Facebook,
+  Twitter,
+  Linkedin,
   Instagram,
-  ArrowUp
-} from 'lucide-react';
+  ArrowUp,
+} from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const quickLinks = [
-  { name: 'Home', path: '/' },
-  { name: 'About Us', path: '/about' },
-  { name: 'Services', path: '/services' },
-  { name: 'Projects', path: '/projects' },
+  { name: "Home", path: "/" },
+  { name: "About Us", path: "/about" },
+  { name: "Services", path: "/services" },
+  { name: "Projects", path: "/projects" },
+  { name: "Our Clients", path: "/clients" },
 ];
 
 const serviceLinks = [
-  { name: 'Civil Construction', path: '/services' },
-  { name: 'MEP Works', path: '/services' },
-  { name: 'Interior Fit-Out', path: '/services' },
-  { name: 'Manpower Supply', path: '/manpower' },
+  { name: "Civil Construction", path: "/services" },
+  { name: "MEP Works", path: "/services" },
+  { name: "Interior Fit-Out", path: "/services" },
+  { name: "Manpower Supply", path: "/manpower" },
 ];
 
 const socialLinks = [
-  { icon: Facebook, href: '#', label: 'Facebook' },
-  { icon: Twitter, href: '#', label: 'Twitter' },
-  { icon: Linkedin, href: '#', label: 'LinkedIn' },
-  { icon: Instagram, href: '#', label: 'Instagram' },
+  { icon: Facebook, href: "#", label: "Facebook" },
+  { icon: Twitter, href: "#", label: "Twitter" },
+  { icon: Linkedin, href: "#", label: "LinkedIn" },
+  { icon: Instagram, href: "#", label: "Instagram" },
 ];
 
 export const Footer = () => {
+  const { t } = useLanguage();
+
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
@@ -55,13 +59,15 @@ export const Footer = () => {
               </div>
               <div>
                 <h3 className="font-display font-bold text-xl">HBR-WORLD</h3>
-                <p className="text-sm text-primary-foreground/70">Contracting & Manpower</p>
+                <p className="text-sm text-primary-foreground/70">{t("Contracting & Manpower")}</p>
               </div>
             </div>
             <p className="text-primary-foreground/80 text-sm leading-relaxed">
-              Delivering excellence in construction, MEP works, fit-out solutions, and professional manpower supply across Saudi Arabia.
+              {t(
+                "Delivering excellence in construction, MEP works, fit-out solutions, and professional manpower supply across Saudi Arabia.",
+              )}
             </p>
-            <div className="flex gap-3">
+            {/* <div className="flex gap-3">
               {socialLinks.map((social) => (
                 <a
                   key={social.label}
@@ -72,12 +78,12 @@ export const Footer = () => {
                   <social.icon className="w-5 h-5" />
                 </a>
               ))}
-            </div>
+            </div> */}
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-display font-semibold text-lg mb-6">Quick Links</h4>
+            <h4 className="font-display font-semibold text-lg mb-6">{t("Quick Links")}</h4>
             <ul className="space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.path}>
@@ -85,7 +91,7 @@ export const Footer = () => {
                     to={link.path}
                     className="text-primary-foreground/80 hover:text-sky-light transition-colors duration-300 text-sm"
                   >
-                    {link.name}
+                    {t(link.name)}
                   </Link>
                 </li>
               ))}
@@ -94,7 +100,7 @@ export const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="font-display font-semibold text-lg mb-6">Our Services</h4>
+            <h4 className="font-display font-semibold text-lg mb-6">{t("Our Services")}</h4>
             <ul className="space-y-3">
               {serviceLinks.map((link) => (
                 <li key={link.name}>
@@ -102,7 +108,7 @@ export const Footer = () => {
                     to={link.path}
                     className="text-primary-foreground/80 hover:text-sky-light transition-colors duration-300 text-sm"
                   >
-                    {link.name}
+                    {t(link.name)}
                   </Link>
                 </li>
               ))}
@@ -111,23 +117,27 @@ export const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h4 className="font-display font-semibold text-lg mb-6">Contact Us</h4>
+            <h4 className="font-display font-semibold text-lg mb-6">{t("Contact Us")}</h4>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-sky-light shrink-0 mt-0.5" />
-                <span className="text-primary-foreground/80 text-sm">
-                  Riyadh, Kingdom of Saudi Arabia
-                </span>
+                <span className="text-primary-foreground/80 text-sm">{t("Riyadh, Kingdom of Saudi Arabia")}</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-sky-light shrink-0" />
-                <a href="tel:+966123456789" className="text-primary-foreground/80 text-sm hover:text-sky-light transition-colors">
+                <a
+                  href="tel:+966123456789"
+                  className="text-primary-foreground/80 text-sm hover:text-sky-light transition-colors"
+                >
                   +966 12 345 6789
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-sky-light shrink-0" />
-                <a href="mailto:info@hbr-world.com" className="text-primary-foreground/80 text-sm hover:text-sky-light transition-colors">
+                <a
+                  href="mailto:info@hbr-world.com"
+                  className="text-primary-foreground/80 text-sm hover:text-sky-light transition-colors"
+                >
                   info@hbr-world.com
                 </a>
               </li>
@@ -138,14 +148,14 @@ export const Footer = () => {
         {/* Bottom Bar */}
         <div className="py-6 border-t border-primary-foreground/10 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-primary-foreground/60 text-sm">
-            © {new Date().getFullYear()} HBR-WORLD. All rights reserved.
+            © {new Date().getFullYear()} HBR-WORLD. {t("All rights reserved.")}
           </p>
           <div className="flex items-center gap-6 text-sm">
             <Link to="/privacy" className="text-primary-foreground/60 hover:text-sky-light transition-colors">
-              Privacy Policy
+              {t("Privacy Policy")}
             </Link>
             <Link to="/terms" className="text-primary-foreground/60 hover:text-sky-light transition-colors">
-              Terms of Service
+              {t("Terms of Service")}
             </Link>
           </div>
         </div>

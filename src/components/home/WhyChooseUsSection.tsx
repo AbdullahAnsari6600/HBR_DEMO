@@ -1,48 +1,44 @@
-import { ScrollReveal } from '@/components/ui/scroll-reveal';
-import { GlassCard } from '@/components/ui/glass-card';
-import {
-  Clock,
-  Award,
-  BadgeDollarSign,
-  ShieldCheck,
-  Star,
-  Headphones,
-} from 'lucide-react';
+import { ScrollReveal } from "@/components/ui/scroll-reveal";
+import { GlassCard } from "@/components/ui/glass-card";
+import { Clock, Award, BadgeDollarSign, ShieldCheck, Star, Headphones } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const features = [
   {
     icon: Clock,
-    title: 'On-Time Delivery',
-    description: 'We pride ourselves on completing projects within scheduled timelines without compromising quality.',
+    title: "On-Time Delivery",
+    description: "We pride ourselves on completing projects within scheduled timelines without compromising quality.",
   },
   {
     icon: Award,
-    title: 'Certified Manpower',
-    description: 'All our workforce is professionally trained, certified, and experienced in their respective fields.',
+    title: "Certified Manpower",
+    description: "All our workforce is professionally trained, certified, and experienced in their respective fields.",
   },
   {
     icon: BadgeDollarSign,
-    title: 'Cost-Effective',
-    description: 'Competitive pricing with transparent billing and no hidden costs for all our services.',
+    title: "Cost-Effective",
+    description: "Competitive pricing with transparent billing and no hidden costs for all our services.",
   },
   {
     icon: ShieldCheck,
-    title: 'High Safety Standards',
-    description: 'Strict HSE protocols and compliance with international safety regulations on all sites.',
+    title: "High Safety Standards",
+    description: "Strict protocols and compliance with international safety regulations on all sites.",
   },
   {
     icon: Star,
-    title: 'Premium Quality',
-    description: 'Using only the finest materials and latest techniques to ensure lasting excellence.',
+    title: "Premium Quality",
+    description: "Using only the finest materials and latest techniques to ensure lasting excellence.",
   },
   {
     icon: Headphones,
-    title: '24/7 Customer Support',
-    description: 'Round-the-clock assistance and rapid response for all your queries and concerns.',
+    title: "24/7 Customer Support",
+    description: "Round-the-clock assistance and rapid response for all your queries and concerns.",
   },
 ];
 
 export const WhyChooseUsSection = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="py-24 bg-background relative overflow-hidden">
       {/* Background Elements */}
@@ -54,12 +50,12 @@ export const WhyChooseUsSection = () => {
       <div className="container mx-auto px-4 relative z-10">
         <ScrollReveal>
           <div className="text-center mb-16">
-            <span className="text-primary font-semibold text-sm uppercase tracking-wider">Why Choose Us</span>
+            <span className="text-primary font-semibold text-sm uppercase tracking-wider">{t("Why Choose Us")}</span>
             <h2 className="font-display font-bold text-3xl md:text-4xl lg:text-5xl mt-4 mb-6">
-              The <span className="bg-gradient-to-r from-sky-dark to-navy-medium bg-clip-text text-transparent">HBR-WORLD</span> Advantage
+              {t("The HBR-WORLD Advantage")}
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Experience the difference that comes with working alongside industry leaders
+              {t("Experience the difference that comes with working alongside industry leaders")}
             </p>
           </div>
         </ScrollReveal>
@@ -74,11 +70,9 @@ export const WhyChooseUsSection = () => {
                   </div>
                   <div>
                     <h3 className="font-display font-semibold text-xl text-foreground mb-2 group-hover:text-primary transition-colors">
-                      {feature.title}
+                      {t(feature.title)}
                     </h3>
-                    <p className="text-muted-foreground leading-relaxed">
-                      {feature.description}
-                    </p>
+                    <p className="text-muted-foreground leading-relaxed">{t(feature.description)}</p>
                   </div>
                 </div>
               </GlassCard>
