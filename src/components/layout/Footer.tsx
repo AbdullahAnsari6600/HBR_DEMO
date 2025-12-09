@@ -129,7 +129,7 @@ export const Footer = () => {
                   href="tel:+966 55 646 8481"
                   className="text-primary-foreground/80 text-sm hover:text-sky-light transition-colors"
                 >
-                  +966 12 345 6789
+                  +966 55 646 8481
                 </a>
               </li>
               <li className="flex items-center gap-3">
