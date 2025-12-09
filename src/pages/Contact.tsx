@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
-import { Phone, Mail, MessageCircle, Send, Clock } from "lucide-react";
+import { Phone, Mail, MessageCircle, Send, Clock, MapPin } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { HeadphonesIcon } from "lucide-react";
 
@@ -26,11 +26,12 @@ const contactInfo = [
     action: "mailto:info@hbr-world.com",
   },
   {
-    icon: Mail,
-    title: "Email Us",
-    details: ["support@hbr-world.com"],
-    action: "mailto:info@hbr-world.com",
+    icon: MapPin,
+    title: "HBR-World Office, Riyadh, Saudi Arabia",
+    details: ["Al Olaya District, Riyadh"],
+    action: "https://www.google.com/maps/place/Hara+Office/@24.6688132,46.7135023,17z",
   },
+  
   {
     icon: Clock,
     title: "Working Hours",
@@ -242,50 +243,33 @@ const Contact = () => {
                   </GlassCard>
 
                   {/* Map Placeholder */}
-                  <GlassCard className="overflow-hidden" id="map">
-  <div className="aspect-[4/3] bg-gradient-to-br from-muted/30 to-secondary/30 relative flex items-center justify-center p-6">
-    {/* Get Connected Design */}
-    <div className="text-center space-y-4">
-      {/* Icon */}
-      <div className="w-20 h-20 rounded-full bg-gradient-to-br from-sky-light to-primary flex items-center justify-center mx-auto shadow-lg">
-        <HeadphonesIcon className="w-10 h-10 text-white animate-pulse" />
-      </div>
+                  {/* Map ONLY – Full size, no text */}
+<GlassCard className="overflow-hidden" id="map">
+  <div className="w-full h-[400px] sm:h-[450px] md:h-[500px] lg:h-[550px] rounded-2xl overflow-hidden relative">
 
-      {/* Text */}
-      <h3 className="text-2xl font-display font-bold text-foreground">
-        {t("Get Connected")}
-      </h3>
-      <p className="text-muted-foreground max-w-xs mx-auto">
-        {t("Reach out to us via email or phone to collaborate or inquire about our services.")}
-      </p>
+  <iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3625.6895188641206!2d46.713502299999995!3d24.6688132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f0572f462ef6b%3A0xd16e5a0b23a5cdc8!2sHara%20Office!5e0!3m2!1sen!2sin!4v1765288578242!5m2!1sen!2sin"
+  width="100%"
+  height="100%"
+  style={{ border: 0 }}
+  allowFullScreen
+  loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade"
+></iframe>
 
-      {/* Optional Buttons */}
-      <div className="flex justify-center gap-4 mt-4">
-        <a
-          href="mailto:info@hbr-world.com"
-          className="px-4 py-2 bg-primary text-white rounded-lg shadow hover:shadow-lg transition"
-        >
-          Email Us
-        </a>
-        <a
-          href="tel:+966123456789"
-          className="px-4 py-2 bg-sky-light text-white rounded-lg shadow hover:shadow-lg transition"
-        >
-          Call Us
-        </a>
-      </div>
-    </div>
 
-    {/* Optional Grid Overlay for style */}
+    {/* Optional light grid overlay (keeps your theme) */}
     <div
-      className="absolute inset-0 opacity-5"
+      className="absolute inset-0 pointer-events-none opacity-5"
       style={{
-        backgroundImage: `linear-gradient(hsl(var(--primary)) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--primary)) 1px, transparent 1px)`,
+        backgroundImage: `linear-gradient(hsl(var(--primary)) 1px, transparent 1px),
+                          linear-gradient(90deg, hsl(var(--primary)) 1px, transparent 1px)`,
         backgroundSize: "40px 40px",
       }}
     />
   </div>
 </GlassCard>
+
 
                 </div>
               </ScrollReveal>

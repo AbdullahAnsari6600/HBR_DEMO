@@ -146,19 +146,15 @@ export const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="py-6 border-t border-primary-foreground/10 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-primary-foreground/60 text-sm">
-            © {new Date().getFullYear()} HBR-WORLD. {t("All rights reserved.")}
-          </p>
-          <div className="flex items-center gap-6 text-sm">
-            <Link to="/privacy" className="text-primary-foreground/60 hover:text-sky-light transition-colors">
-              {t("Privacy Policy")}
-            </Link>
-            <Link to="/terms" className="text-primary-foreground/60 hover:text-sky-light transition-colors">
-              {t("Terms of Service")}
-            </Link>
-          </div>
-        </div>
+        <div className="py-6 border-t border-primary-foreground/10 flex flex-col items-center gap-4">
+  <p className="text-primary-foreground/60 text-sm">
+    © {new Date().getFullYear()} HBR-WORLD. {t("All rights reserved.")}
+  </p>
+  <div className="flex items-center gap-6 text-sm text-center">
+    {/* Optional links can go here if needed */}
+  </div>
+</div>
+
       </div>
 
       {/* Scroll to Top */}
