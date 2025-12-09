@@ -157,9 +157,9 @@ const projects = [
   {
     id: 17,
     title: "Power Rack Company",
-    category: "Logistics works",
+    category: "Racking & Shelving works",
     description:
-      "HBR-World, in partnership with Power Rack Company in Jeddah, has provided skilled and semi-skilled manpower to all major logistics companies across Saudi Arabia. We have successfully supported leading brands such as Amazon, Noon, DSP, Agility, and Aramex, delivering dependable manpower solutions for warehouse operations, sorting, packaging, loading/unloading, and delivery support across Riyadh, Jeddah, Dammam, and Al-Qassim.",
+      "HBR-World, in collaboration with SPAN Support Service Network Company, has provided skilled and semi-skilled manpower to all major logistics companies across Saudi Arabia. Power Rack Company delivers specialized racking and shelving services, while our teams have supported leading brands such as Amazon, Noon, DSP, Agility, and Aramex with dependable workforce solutions for warehouse operations.",
       scope: ["Warehouse Operations Support", "Loading & Unloading Assistance", "Delivery & Last-Mile Support", "General logistics manpower"],
     image: "/pro18.jpg",
   },
