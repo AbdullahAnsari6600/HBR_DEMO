@@ -165,6 +165,17 @@ const services = [
       "Process optimization",
       "Factory maintenance"
     ]
+  },{
+    icon: PaintBucket,
+    title: "House Keeping",
+    description: "House keeping male and female workers",
+    color: "from-navy-light to-navy-dark",
+    videoFile: "constructionn.mp4",
+    features: [
+      "Trained workers",
+      "Experienced indoor & outdoor cleaning",
+      "Fully Dedicated"
+    ]
   }
 ];
 

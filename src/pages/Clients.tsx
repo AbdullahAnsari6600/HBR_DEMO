@@ -115,6 +115,20 @@ const clients = [
   { name: "Aramex Group Company", logo: "/logos/14.png" },
   { name: "Al-Drees Company", logo: "/logos/15.png" },
   { name: "Modern Building Leaders Company", logo: "/logos/16.png" },
+  { name: "Support Service Network Company", logo: "logos/ss.jpg" },
+  { name: "Power Rack Company", logo: "logos/pro17.jpg" },
+  { name: "Agility Warehouses", logo: "logos/pro18.jpg" },
+  { name: "Low Current works", logo: "logos/snc.jpg" },
+  { name: "Electro-mechanical works", logo: "logos/BABTAIN.jpg" },
+  { name: "Electrical Construction", logo: "logos/pro19.png" },
+  { name: "Setra Company works", logo: "logos/pro20.webp" },
+  { name: "katerra Company works (2018-2023)", logo: "logos/Katerra.jpg" },
+  { name: "Construction & Mechanical through MSQ Company(2020-2023)", logo: "logos/egng.png" },
+  { name: "Al Mabani Company", logo: "logos/17.png" },
+  { name: "We offered our services to Al Saad Company in Civil COnstruction and MEP works", logo: "logos/18.png" },
+  { name: "HBR-World provides Manpower Contracting Services for major projects in Riyadh, including Misk City and the King Salman Park (KSP) Project.", logo: "logos/19.png" },
+  { name: "Civil Construction Company", logo: "logos/20.png" },
+  { name: "Heavy Welding for pipelines, 3G 4G 6G weldings and sand blaster", logo: "logos/21.png" },
 ];
 
 const Clients = () => {

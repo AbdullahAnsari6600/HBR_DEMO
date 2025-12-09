@@ -100,7 +100,7 @@ const projects = [
     category: "Heavy Sheds",
     description: "HBR-World Manpower Supply and Contracting Company supplied skilled and semi skilled manpower to Al Ajlan Company for the fabrication and installation of parking sheds in Riyadh, KSA. The project scope included structural steel fabrication, welding, painting, and complete installation works, ensuring strength, durability, and long service performance",
     scope: ["Steel fabrication", "Welding works", "Painting", "Installation"],
-    image: "/pro11.jpg",
+    image: "/pro11.webp",
   },
   {
     id: 12,
@@ -144,6 +144,59 @@ const projects = [
       "HBR-World, in collaboration with Al Sharq Company, supplied skilled manpower for underground cable-pulling works across multiple sites in Saudi Arabia. The scope included trenching, conduit preparation, wide-cable laying, and precise alignment, ensuring safe, high-quality, and reliable infrastructure.",
       scope: ["Trenching works", "Conduit preparation", "Cable laying", "Alignment & inspection"],
     image: "/pro16.jpg",
+  },
+  {
+    id: 17,
+    title: "Racking Shelving works",
+    category: "Industrial works",
+    description:
+      "HBR-World, in partnership with a leading support service network company, provided skilled and semi-skilled manpower for major logistics and delivery operations across Saudi Arabia. Our teams supported projects for Amazon, Noon, DSP, Agility, and Aramex, delivering reliable workforce solutions in Riyadh, Jeddah, Dammam, and Al-Qassim.",
+      scope: ["Rack Installation & Assembly", "Warehouse Shelving Setup", "Maintenance & Load Testing"],
+    image: "/pro17.jpg",
+  },
+  {
+    id: 17,
+    title: "Power Rack Company",
+    category: "Logistics works",
+    description:
+      "HBR-World, in partnership with Power Rack Company in Jeddah, has provided skilled and semi-skilled manpower to all major logistics companies across Saudi Arabia. We have successfully supported leading brands such as Amazon, Noon, DSP, Agility, and Aramex, delivering dependable manpower solutions for warehouse operations, sorting, packaging, loading/unloading, and delivery support across Riyadh, Jeddah, Dammam, and Al-Qassim.",
+      scope: ["Warehouse Operations Support", "Loading & Unloading Assistance", "Delivery & Last-Mile Support", "General logistics manpower"],
+    image: "/pro18.jpg",
+  },
+  {
+    id: 17,
+    title: "Low Current Works",
+    category: "Networking & IT Services",
+    description:
+      "HBR-World specializes in delivering comprehensive Low Current solutions across Saudi Arabia. In collaboration with Power Rack Company in Jeddah, we provide skilled and semi-skilled manpower for the installation, configuration, and maintenance of low-voltage systems.",
+      scope: ["Network Cabling", "System Integration", "CCTV System Setup", "Fiber Optic Splicing"],
+    image: "/snc.jpg",
+  },
+  {
+    id: 17,
+    title: "Al Sahafa Yasmeen Project",
+    category: "Electro-Mechanical Project",
+    description:
+      "HBR-World specializes in delivering comprehensive Low Current solutions across Saudi Arabia. In collaboration with Power Rack Company in Jeddah, we provide skilled and semi-skilled manpower for the installation, configuration, and maintenance of low-voltage systems.",
+      scope: ["Electromechanic", "Mechanical", "Gypsum", "Plumbing","Ducting", "House Keeping"],
+    image: "/proele.jpg",
+  },{
+    id: 17,
+    title: "Al Hadithah Port Project (Saudi-Jordon border)",
+    category: "All Construction Categories through MSQ",
+    description:
+      "HBR-World successfully contributed from 2020-2023 to the Al Hadithah Port Project located at the Saudi–Jordan border, delivering essential construction manpower and technical support through MSQ. Our team provided skilled professionals across multiple disciplines, including engineering, plumbing, ducting, and mechanical works.",
+      scope: ["Engineer", "Plumbing", "Ducting", "Mechanical"],
+    image: "/had.jpg",
+  },
+  {
+    id: 17,
+    title: "Al Sawaed Arab Company, Riyadh",
+    category: "All Construction Categories through MSQ",
+    description:
+      "HBR-World successfully contributed from to the Al Sawaed Arab Company Project located in Riyadh, delivering essential construction manpower and technical support through MSQ. Our team provided skilled professionals across multiple disciplines, including engineering, plumbing, ducting, and mechanical works.",
+      scope: ["Engineer", "Plumbing", "Ducting", "Mechanical"],
+    image: "/home.png",
   },
 ];
 

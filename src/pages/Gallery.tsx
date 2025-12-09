@@ -357,6 +357,15 @@ const galleryItems = [
   { id: 22, category: "Manpower", image: "/images/22.jpeg" },
   { id: 23, category: "Civil", image: "/images/23.jpeg" },
   { id: 24, category: "Interior", image: "/images/24.jpeg" },
+  { id: 24, category: "Manpower Supply", image: "/images/41.jpeg" },
+  { id: 24, category: "Manpower Supply", image: "/images/42.jpeg" },
+  { id: 24, category: "Manpower Supply", image: "/images/43.jpeg" },
+  { id: 24, category: "Construction", image: "/images/44.jpeg" },
+  { id: 24, category: "Construction", image: "/images/45.jpeg" },
+  { id: 24, category: "KAFD", image: "/images/46.jpeg" },
+  { id: 24, category: "Asphalt", image: "/images/47.jpeg" },
+  { id: 24, category: "Construction", image: "/images/48.jpeg" },
+  { id: 24, category: "5 Star Hotel", image: "/images/49.jpeg" },
 ];
 
 const Gallery = () => {
