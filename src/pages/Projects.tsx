@@ -231,6 +231,39 @@ const projects = [
     "Al Rajhi Bank, Head Office Construction in Riyadh, 2015.",
       scope: ["Engineer", "Plumbing", "Manpower", "Mechanical"],
     image: "/bank.jpeg",
+  }, {
+    id: 17,
+    title: "KAFD Project",
+    category: "Internal & External Glasses",
+    description:
+    "KAFD Project, supplied Skilled workers to PBC Company",
+      scope: ["Glass Frames", "Aluminium Glass Fitting", "Exterior Glass Fitting", "Interior Glass Fitting"],
+    image: "/46.jpeg",
+  },{
+    id: 17,
+    title: "Sawaed Co. Tanker Project, Riyadh",
+    category: "Tanker Construction",
+    description:
+    "Constructed a tanker at Riyadh-Dammam Road near PP9(Power Project) through MSQ Company",
+      scope: ["Heavy Welding works", "Civil works"],
+    image: "/protanker.jpeg",
+  },{
+    id: 17,
+    title: "Sahafa Project Riyadh",
+    category: "Construction",
+    description:
+    "HBR-world has successfully completed Sahafa Hotel project providing skilled and experienced  manpower.",
+      scope: ["Construction", "Civil works"],
+    image: "/sahafa.jpeg",
+  },
+  {
+    id: 17,
+    title: "Tower At Olaya, Riyadh",
+    category: "Construction",
+    description:
+    "HBR-world has successfully installed Aluminium glasses frames and external glasses.",
+      scope: ["Aluminium Glass Frames", "Glasses Installation"],
+    image: "/Tower.jpeg",
   },
 ];
 

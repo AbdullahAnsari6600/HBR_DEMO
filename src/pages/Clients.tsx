@@ -128,7 +128,7 @@ const clients = [
   { name: "We offered our services to Al Saad Company in Civil COnstruction and MEP works", logo: "logos/18.png" },
   { name: "HBR-World provides Manpower Contracting Services for major projects in Riyadh, including Misk City and the King Salman Park (KSP) Project.", logo: "logos/19.png" },
   { name: "Civil Construction Company", logo: "logos/20.png" },
-  { name: "Heavy Welding for pipelines, 3G 4G 6G weldings and sand blaster", logo: "logos/21.png" },
+  { name: "Heavy Welding for pipelines, 3G 4G 6G weldings and sand blaster-Sawaed Company", logo: "logos/21.webp" },
   { name: "Bloack Masonry , Civil and Mechanical works with Trust Integrated Tehnology Co.", logo: "logos/pro21.jpg" },
 ];
 
