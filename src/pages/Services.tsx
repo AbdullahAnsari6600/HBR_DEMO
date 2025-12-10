@@ -176,6 +176,29 @@ const services = [
       "Experienced indoor & outdoor cleaning",
       "Fully Dedicated"
     ]
+  },{
+    icon: Zap,
+    title: "Support Service Network Installation",
+    description: "Equipment installations",
+    color: "from-navy-light to-navy-dark",
+    videoFile: "ssn.mp4",
+    features: [
+      "Trained workers",
+      "Experienced Networking Team",
+      "Certified workers"
+    ]
+  },
+  { 
+    icon: Zap,
+    title: "Power Rack Installation",
+    description: "Racking and Shelving Installations",
+    color: "from-navy-light to-navy-dark",
+    videoFile: "racking.mp4",
+    features: [
+      "On time delivery",
+      "Experienced working Team",
+      "On time support"
+    ]
   }
 ];
 

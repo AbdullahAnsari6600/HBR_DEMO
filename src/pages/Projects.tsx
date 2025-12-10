@@ -194,9 +194,43 @@ const projects = [
     title: "Al Sawaed Arab Company, Riyadh",
     category: "All Construction Categories through MSQ",
     description:
-      "HBR-World successfully contributed from to the Al Sawaed Arab Company Project located in Riyadh, delivering essential construction manpower and technical support through MSQ. Our team provided skilled professionals across multiple disciplines, including engineering, plumbing, ducting, and mechanical works.",
+      "HBR-World successfully contributed to the Al Sawaed Arab Company Project located in Riyadh, delivering essential construction manpower and technical support through MSQ. Our team provided skilled professionals across multiple disciplines, including engineering, plumbing, ducting, and mechanical works.",
       scope: ["Engineer", "Plumbing", "Ducting", "Mechanical"],
     image: "/home.png",
+  },
+  {
+    id: 17,
+    title: "Gypsum works, Dr Sulaiman Al Habib & Red Sea Project",
+    category: "Gypsum works at various Locations around Kingdom of Saudi Arabia",
+    description:
+    "HBR-World successfully contributed to the Red Sea Project and to the Dr Sulaiman Al Habib , by providing skilled labour for the gypsum works",
+      scope: ["Engineer", "Plumbing", "Ducting", "Mechanical"],
+    image: "/dr2.jpeg",
+  }, {
+    id: 17,
+    title: "Agility works at Amazon warehouse",
+    category: "Racking, shelving and agility works by HBR-world team thorugh MSQ",
+    description:
+    "Racking, shelving and agility works at amazon warehouse by HBR-World team through MSQ",
+      scope: ["Engineer", "Plumbing", "Ducting", "Mechanical"],
+    image: "/proamazon.jpeg",
+  }, {
+    id: 17,
+    title: "HMG Sahafa Project Riyadh",
+    category: "Civil Construction",
+    description:
+    "Providing our Manpower for various Construction purpose at HMG Sahafa Project, Riyadh",
+      scope: ["Engineer", "Plumbing", "Ducting", "Mechanical"],
+    image: "/hmg.jpeg",
+  },
+  {
+    id: 17,
+    title: "Al Rajhi Bank, Head Office",
+    category: "Civil Construction",
+    description:
+    "Al Rajhi Bank, Head Office Construction in Riyadh, 2015.",
+      scope: ["Engineer", "Plumbing", "Manpower", "Mechanical"],
+    image: "/bank.jpeg",
   },
 ];
 
