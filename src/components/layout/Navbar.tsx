@@ -6,15 +6,16 @@ import { cn } from "@/lib/utils";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const navItems = [
-  { name: "Home", path: "/" },
-  { name: "About Us", path: "/about" },
-  { name: "Services", path: "/services" },
-  { name: "Projects", path: "/projects" },
-  { name: "Manpower", path: "/manpower" },
-  { name: "Gallery", path: "/gallery" },
-  { name: "Our Clients", path: "/clients" },
-  { name: "Contact", path: "/contact" },
+  { key: "home", path: "/" },
+  { key: "about", path: "/about" },
+  { key: "services", path: "/services" },
+  { key: "projects", path: "/projects" },
+  { key: "manpower", path: "/manpower" },
+  { key: "gallery", path: "/gallery" },
+  { key: "clients", path: "/clients" },
+  { key: "contact", path: "/contact" },
 ];
+
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -62,20 +63,22 @@ export const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-1">
-            {navItems.map((item) => (
-              <Link
-                key={item.path}
-                to={item.path}
-                className={cn(
-                  "px-4 py-2 rounded-lg font-medium transition-all duration-300 text-sm",
-                  location.pathname === item.path
-                    ? "bg-primary/10 text-primary"
-                    : "text-foreground/80 hover:text-primary hover:bg-primary/5",
-                )}
-              >
-                {t(item.name)}
-              </Link>
-            ))}
+          {navItems.map((item) => (
+  <Link
+    key={item.path}
+    to={item.path}
+    onClick={() => setIsOpen(false)}
+    className={cn(
+      "px-4 py-3 rounded-lg font-medium transition-all duration-300",
+      location.pathname === item.path
+        ? "bg-primary/10 text-primary"
+        : "text-foreground hover:text-primary hover:bg-primary/5",
+    )}
+  >
+    {t(`nav.${item.key}`)}
+  </Link>
+))}
+
           </div>
 
           <div className="hidden lg:flex items-center gap-3">
@@ -122,7 +125,7 @@ export const Navbar = () => {
                     : "text-foreground hover:text-primary hover:bg-primary/5",
                 )}
               >
-                {t(item.name)}
+                {t(`nav.${item.key}`)}
               </Link>
             ))}
             {/* <Button variant="gradient" className="mt-2 mx-4" asChild>

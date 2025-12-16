@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import {
   Building2,
-  PaintBucket,
+  HardHat,
   Palette,
   Zap,
   Droplets,
@@ -18,39 +18,60 @@ import {
   Users,
   ShieldCheck,
   Factory,
+  Boxes,
+  PackageCheck,
+  Layers,
+  Sun,
+  Recycle,
+  PaintRoller,
+  Construction,
+  Paintbrush2,
+  SprayCan,
+  Grid2X2,
+  Flame,
+  ClipboardList,
+  User,
+  UserCheck,
+  Siren,
+  Warehouse,
+  Cog,
+  Blocks,
+  Home,
+  Ruler,
+  LayoutGrid // ✅ ADD THIS
 } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const services = [
   {
-    icon: Building2,
+    icon: HardHat, // changed from Building2
     title: "Civil Construction",
     description: "Complete structural and civil engineering solutions for commercial and residential projects.",
-    color: "from-sky-medium to-sky-dark",
+    color: "from-sky-400 to-sky-600", // brighter gradient
     videoFile: "excavation.mp4",
     features: [
       "Structural precision work",
       "Experienced civil engineers",
-      "Industrial, Commercial and residentials works"
+      "Industrial, Commercial and residential works"
     ]
   },
   {
-    icon: PaintBucket,
+    icon: Users, // changed from PaintBucket
     title: "Manpower Supply",
     description: "Skilled, semi-skilled, and general workforce solutions.",
-    color: "from-primary to-navy-light",
+    color: "from-green-400 to-green-600",
     videoFile: "manpower.mp4",
     features: [
       "Certified skilled workers",
-      "Indoor , Outdoor & Garden Cleaning",
+      "Indoor, Outdoor & Garden Cleaning",
       "Semi-skilled workers"
     ]
   },
   {
-    icon: Factory,
+    icon: Factory, // kept same, relevant
     title: "Exterior Glass Fitting",
     description: "Stunning exterior cladding, facades, and finishing solutions.",
-    color: "from-sky-dark to-navy-medium",
+    color: "from-purple-400 to-purple-600", // more distinct purple gradient
     videoFile: "glass.mp4",
     features: [
       "High-quality glass installation",
@@ -62,7 +83,7 @@ const services = [
     icon: Zap,
     title: "Electrical Works",
     description: "Complete electrical installations, maintenance, and smart systems.",
-    color: "from-yellow-400 to-orange-500",
+    color: "from-yellow-400 to-yellow-600", // adjusted gradient
     videoFile: "electrical.mp4",
     features: [
       "Wiring & panel installation",
@@ -79,7 +100,7 @@ const services = [
     features: [
       "Leak detection & repair",
       "Water tank & pipeline setup",
-      "Heavy equipments with drivers"
+      "Heavy equipment with drivers"
     ]
   },
   {
@@ -107,10 +128,10 @@ const services = [
     ]
   },
   {
-    icon: Settings,
+    icon: Settings, // changed from Settings
     title: "Facility Maintenance",
     description: "Comprehensive facility management and maintenance services.",
-    color: "from-purple-400 to-purple-600",
+    color: "from-purple-500 to-purple-700", // brighter purple
     videoFile: "cleaning.mp4",
     features: [
       "Daily & periodic maintenance",
@@ -122,7 +143,7 @@ const services = [
     icon: Hammer,
     title: "Renovation Works",
     description: "Complete renovation and refurbishment of existing structures.",
-    color: "from-amber-400 to-amber-600",
+    color: "from-orange-400 to-orange-600", // warmer gradient
     videoFile: "maintenance.mp4",
     features: [
       "Modern design upgrades",
@@ -131,10 +152,10 @@ const services = [
     ]
   },
   {
-    icon: Users,
+    icon: Palette, // changed from Users
     title: "Networking & IT Services",
-    description: "Data operators with efficient file handling",
-    color: "from-green-400 to-green-600",
+    description: "Data operators with efficient file handling.",
+    color: "from-green-500 to-green-700", // distinct gradient
     videoFile: "networking.mp4",
     features: [
       "Data Entry",
@@ -142,8 +163,9 @@ const services = [
       "System Troubleshooting & Support"
     ]
   },
+
   {
-    icon: ShieldCheck,
+    icon: User, // changed from ShieldCheck
     title: "Fitout Works",
     description: "High-quality interior and exterior fitout services.",
     color: "from-red-400 to-red-600",
@@ -155,51 +177,440 @@ const services = [
     ]
   },
   {
-    icon: Factory,
+    icon: Factory, // kept same, industrial relevant
     title: "Industrial Support",
     description: "Industrial facility support and operational assistance.",
-    color: "from-navy-light to-navy-dark",
-    videoFile: "constructionn.mp4",
+    color: "from-slate-700 to-slate-900", // darker gradient
+    videoFile: "conn.mp4", // updated video name
     features: [
       "Industrial manpower",
       "Process optimization",
       "Factory maintenance"
     ]
-  },{
-    icon: PaintBucket,
-    title: "House Keeping",
-    description: "House keeping male and female workers",
-    color: "from-navy-light to-navy-dark",
-    videoFile: "house.mp4",
+  },
+  {
+    icon: HardHat, // kept same, relevant to shelters
+    title: "Shelter Works",
+    description: "Parking, residential, and stadium shelters with precision welding, high-quality fabrication, and full installation, executed by Obeikan Company through our skilled, reliable, and well-trained manpower team.",
+    color: "from-amber-400 to-amber-600",
+    videoFile: "shed.mp4", // updated video name
     features: [
-      "Trained workers",
-      "Experienced indoor & outdoor cleaning",
-      "Fully Dedicated"
-    ]
-  },{
-    icon: Zap,
-    title: "Support Service Network Installation",
-    description: "Equipment installations",
-    color: "from-navy-light to-navy-dark",
-    videoFile: "ssn.mp4",
-    features: [
-      "Trained workers",
-      "Experienced Networking Team",
-      "Certified workers"
+      "Durable",
+      "Structural",
+      "Efficient & Safe"
     ]
   },
-  { 
-    icon: Zap,
-    title: "Power Rack Installation",
-    description: "Racking and Shelving Installations",
-    color: "from-navy-light to-navy-dark",
-    videoFile: "racking.mp4",
+  {
+    icon: Wrench, // changed from Factory for welding
+    title: "6G Weldings",
+    description: "Heavy welding services for industrial and residential structures, including 3G, 4G, and 6G welding, carried out by certified and highly experienced welders to ensure strength, precision, and durability.",
+    color: "from-gray-500 to-gray-700", // metallic color gradient
+    videoFile: "6gg.mp4", // updated video name
     features: [
-      "On time delivery",
-      "Experienced working Team",
-      "On time support"
+      "3G 4G 6G Heavy weldings",
+      "Industrial manpower"
     ]
+  },
+  {
+    icon: Boxes, // new icon for glass installation
+    title: "Glass Installation",
+    description: "Glass cutting and installation services carried out with precision, safety, and quality workmanship. Suitable for residential, commercial, and industrial applications, ensuring a perfect fit and durable finish.",
+    color: "from-cyan-400 to-cyan-600",
+    videoFile: "glasss.mp4", // updated video name
+    features: [
+      "Glass Cutting",
+      "Glass Industries",
+      "Accuracy & Precision"
+    ]
+  },
+  {
+    icon: Wrench, // kept, relevant for aluminium
+    title: "Aluminium Cladding Installation",
+    description: "Aluminum cladding installation executed with accuracy and quality workmanship. Ideal for commercial, residential, and industrial buildings.",
+    color: "from-indigo-400 to-indigo-600",
+    videoFile: "cladding.mp4",
+    features: [
+      "Durable",
+      "Light weight",
+      "Weatherproof"
+    ]
+  },
+  {
+    icon: Wind, // HVAC related, reused for GRC
+    title: "GRC Panel Installation",
+    description: "GRC panel installation services providing strong, lightweight, and architecturally finished solutions for building facades and structural elements.",
+    color: "from-teal-400 to-teal-600",
+    videoFile: "grcc.mp4",
+    features: [
+      "Durable",
+      "Light weight",
+      "Weatherproof"
+    ]
+  },
+  {
+    icon: ShieldCheck, // safety/compliance for gypsum
+    title: "Gypsum Board Installation",
+    description: "Gypsum board installation for ceilings and partitions, suitable for residential, commercial, and industrial spaces. Executed with precision to deliver smooth finishes and proper alignment.",
+    color: "from-purple-400 to-purple-600",
+    videoFile: "gypsum.mp4",
+    features: [
+      "Smooth",
+      "Durable",
+      "Versatile"
+    ]
+  },
+  {
+    icon: HardHat, // construction related
+    title: "Structure Erection",
+    description: "Structure erection works across multiple locations in the KSA, executed with skilled manpower, strict safety compliance, and precise installation for industrial and commercial projects.",
+    color: "from-sky-400 to-sky-600",
+    videoFile: "st.mp4",
+    features: [
+      "Safe",
+      "Precise",
+      "Reliable"
+    ]
+  },
+  {
+    icon: Wind, // ducting / airflow
+    title: "Ducting Installation",
+    description: "Ducting installation services for HVAC systems, ensuring efficient airflow, proper sealing, and reliable performance across residential, commercial, and industrial projects.",
+    color: "from-red-400 to-red-600",
+    videoFile: "duct.mp4",
+    features: [
+      "Efficient",
+      "Sealed",
+      "Reliable"
+    ]
+  },
+
+  {
+    icon: Droplets, // plumbing related
+    title: "Plumbing Works",
+    description: "Plumbing works services covering installation, maintenance, and repair of water supply and drainage systems for residential, commercial, and industrial projects, executed with quality.",
+    color: "from-teal-400 to-teal-600",
+    videoFile: "plum.mp4",
+    features: [
+      "Industrial Plumbing",
+      "Water Supply Systems",
+      "Drainage & Sanitary Works"
+    ]
+  },
+  {
+    icon: SprayCan, // pipe fitting icon (use relevant lucide icon if available)
+    title: "Pipe Fitting",
+    description: "Pipe fitting services for industrial, commercial, and residential projects, including installation, alignment, and jointing of piping systems to ensure safe and efficient flow operations.",
+    color: "from-indigo-400 to-indigo-600",
+    videoFile: "pipe.mp4",
+    features: [
+      "Process & Utility Lines",
+      "Industrial Pipe Fitting",
+      "Maintenance & Replacement Works"
+    ]
+  },
+  {
+    icon: Droplets, // fire fighting system icon
+    title: "Fire Fighting System",
+    description: "Fire fighting system installation and maintenance works for industrial, commercial, and residential projects, including piping, pumps, valves, and safety equipment, executed with safety.",
+    color: "from-red-400 to-red-600",
+    videoFile: "fire.mp4",
+    features: [
+      "Fire Sprinkler Systems",
+      "Hydrant & Hose Reel Systems",
+      "Fire Pump Installation"
+    ]
+  },
+  {
+    icon: Settings, // kept same, electrical control panel
+    title: "Internal Panel Wiring Installation",
+    description: "Internal panel wiring installation services for electrical distribution panels, ensuring safe power distribution with proper cable routing and secure terminations.",
+    color: "from-purple-400 to-purple-600",
+    videoFile: "wire.mp4",
+    features: [
+      "Control Panel Wiring",
+      "Distribution Board Wiring",
+      "Power & Control Circuits"
+    ]
+  },
+  {
+    icon: Zap, // kept, electrical
+    title: "Electric House Wiring",
+    description: "Electrical house wiring installation services covering lighting, power points, and distribution systems, ensuring safe, efficient, and code-compliant wiring for residential projects.",
+    color: "from-yellow-400 to-orange-500",
+    videoFile: "elec.mp4",
+    features: [
+      "Lighting Circuits",
+      "Power Socket Wiring",
+      "Distribution Board Connection"
+    ]
+  },
+  {
+    icon: Zap, // electrical / high voltage
+    title: "Low & High Voltage Cable Termination Works",
+    description: "Low and high voltage cable termination services ensuring secure connections, proper insulation, and safe power transmission for various purposes.",
+    color: "from-blue-400 to-blue-500",
+    videoFile: "wire.mp4",
+    features: [
+      "LV Cable Termination",
+      "HV Cable Termination",
+      "Glanding & Lug Crimping"
+    ]
+  },
+  {
+    icon: Building2, // masonry/construction
+    title: "Hollow Block Installation",
+    description: "Professional hollow block installation delivering durable, precisely aligned, and load-bearing walls for residential, commercial, and large-scale industrial construction projects.",
+    color: "from-orange-400 to-orange-600",
+    videoFile: "mas.mp4",
+    features: [
+      "Masonry",
+      "Structural",
+      "Construction"
+    ]
+  },
+  {
+    icon: Hammer, // plastering/construction tool
+    title: "Plastering Work",
+    description: "Professional plastering work providing smooth, durable, and high-quality wall and ceiling finishes for residential, commercial, and industrial buildings.",
+    color: "from-pink-400 to-pink-600",
+    videoFile: "plas.mp4",
+    features: [
+      "Finishing",
+      "Surface",
+      "Construction"
+    ]
+  },
+  {
+    icon: ShieldCheck, // safety / compliance
+    title: "Scaffolding Work & TÜV Certified Workers",
+    description: "Professional scaffolding work provided by TÜV certified workers, ensuring safe access, stability, and compliance for construction and industrial sites.",
+    color: "from-emerald-400 to-emerald-600",
+    videoFile: "scaff.mp4",
+    features: ["Safety", "Access", "Compliance"]
+  },
+  {
+    icon: PaintRoller, // painting
+    title: "Indoor & Outdoor Roller / Spray Painting Work",
+    description: "High-quality indoor and outdoor roller and spray painting delivering smooth finishes, uniform coverage, and long-lasting protection.",
+    color: "from-sky-400 to-sky-600",
+    videoFile: "painti.mp4",
+    features: ["Painting", "Finishing", "Coating"]
+  },
+  {
+    icon: Construction, // scaffolding / site work
+    title: "Scaffolding Work & TÜV Certified Workers",
+    description: "Professional scaffolding work provided by TÜV certified workers, ensuring safe access, stability, and compliance for construction and industrial sites.",
+    color: "from-lime-400 to-lime-600",
+    videoFile: "scaff2.mp4",
+    features: ["Safety", "Access", "Compliance"]
+  },
+  {
+    icon: Paintbrush2, // painting
+    title: "Indoor & Outdoor Roller / Spray Painting Work",
+    description: "High-quality indoor and outdoor roller and spray painting delivering smooth finishes, uniform coverage, and long-lasting protection.",
+    color: "from-rose-400 to-rose-600",
+    videoFile: "painti.mp4",
+    features: ["Painting", "Finishing", "Coating"]
+  },
+  {
+    icon: SprayCan, // industrial painting
+    title: "Indoor & Outdoor Roller / Spray Painting Work (Industrial)",
+    description: "High-quality indoor and outdoor roller or spray painting work delivering smooth finishes, uniform coverage, and long-lasting surface protection.",
+    color: "from-violet-400 to-violet-600",
+    videoFile: "paint2.mp4",
+    features: ["Expert", "Reliable", "Industry-standard"]
+  },
+  {
+    icon: Grid2X2, // tiles / flooring
+    title: "Marble & Tiles Installation Work",
+    description: "High-quality marble and tile installation work ensuring precise alignment, elegant finishes, and long-lasting flooring and wall surfaces.",
+    color: "from-amber-400 to-amber-600",
+    videoFile: "tiles.mp4",
+    features: ["Flooring", "Finishing", "Construction"]
+  },
+  {
+    icon: Settings, // stainless steel / QC
+    title: "Stainless Steel QC, Work & TIG Welding Services",
+    description: "High-quality stainless steel QC, fabrication, and TIG welding work ensuring strong joints, precision finishing, and industry-standard compliance.",
+    color: "from-slate-400 to-slate-600",
+    videoFile: "steel.mp4",
+    features: ["Welding", "Fabrication", "Quality"]
+  },
+  {
+    icon: Flame, // MIG welding
+    title: "MIG Welding for Heavy-Duty Works",
+    description: "High-quality MIG welding for heavy-duty industrial and residential works delivering strong joints, high load capacity, and durable industrial fabrication results.",
+    color: "from-orange-500 to-red-600",
+    videoFile: "mig.mp4",
+    features: ["Welding", "HeavyDuty", "Fabrication"]
+  },
+  {
+    icon: ClipboardList, // housekeeping
+    title: "Housekeeping Services (All Purpose)",
+    description: "Comprehensive housekeeping services for hospitals, hotels, and shopping malls, covering indoor and outdoor areas with trained male and female staff available.",
+    color: "from-cyan-400 to-cyan-600",
+    videoFile: "hou.mp4",
+    features: ["Cleaning", "Hospitality", "Maintenance"]
+  },
+  {
+    icon: PaintRoller, // maintenance
+    title: "Maintenance Works",
+    description: "Reliable maintenance works covering electrical, plumbing, civil, and general repairs to ensure smooth and uninterrupted facility operations.",
+    color: "from-indigo-500 to-indigo-700",
+    videoFile: "mai.mp4",
+    features: ["Repair", "Services", "Facilities"]
+  },
+  
+  {
+    icon: User, // male housekeeping
+    title: "Outdoor Male Housekeeping Services",
+    description: "Professional outdoor housekeeping services with trained male staff, ensuring cleanliness, hygiene, and organized maintenance for various commercial and public spaces.",
+    color: "from-blue-400 to-blue-600",
+    videoFile: "mal.mp4",
+    features: [
+      "Cleaning",
+      "Outdoor",
+      "Maintenance"
+    ]
+  },
+  {
+    icon: UserCheck, // female housekeeping
+    title: "Female Housekeeping Services",
+    description: "Trained female housekeeping staff providing thorough cleaning, organization, and maintenance services for homes, offices, hotels, and other indoor spaces.",
+    color: "from-rose-400 to-fuchsia-600",
+    videoFile: "fem.mp4",
+    features: ["Cleaning", "Indoor", "Maintenance"]
+  },
+  {
+    icon: Siren, // fire alarm & low current
+    title: "Low Current & Fire Alarm System Work",
+    description: "Expert installation, testing, and maintenance of low current and fire alarm systems ensuring safety, reliability, and regulatory compliance for buildings.",
+    color: "from-orange-500 to-rose-600",
+    videoFile: "fir.mp4",
+    features: ["Safety", "Electrical", "Security"]
+  },
+  {
+    icon: Warehouse, // parking shelter
+    title: "Car Parking Shelter Work",
+    description: "Design, fabrication, and installation of durable car parking shelters providing protection, weather resistance, and organized parking spaces for residential and commercial areas.",
+    color: "from-yellow-400 to-orange-600",
+    videoFile: "she.mp4",
+    features: ["Shelter", "Fabrication", "Installation"]
+  },
+  {
+    icon: Cog, // generator mechanic
+    title: "Skilled Generator Mechanic Services",
+    description: "Experienced generator mechanics available for installation, maintenance, and repair of generators, ensuring reliable power supply and efficient performance.",
+    color: "from-zinc-400 to-zinc-600",
+    videoFile: "gen.mp4",
+    features: ["Maintenance", "Repair", "Power"]
+  },
+  {
+    icon: Wrench, // riggers
+    title: "Certified Rigger Services",
+    description: "Qualified riggers available at Level 1, 2, and 3, providing safe and efficient lifting, rigging, and material handling services with proper certification and skilled labors.",
+    color: "from-cyan-400 to-teal-600",
+    videoFile: "rig.mp4",
+    features: ["Rigging", "Safety", "Certified"]
+  },
+  {
+    icon: Blocks, // concrete work
+    title: "Concrete Work & Skilled Concrete Workers",
+    description: "Professional concrete work with skilled workers delivering durable, high-quality foundations, slabs, and structures for residential, commercial, and industrial projects.",
+    color: "from-lime-400 to-emerald-500",
+    videoFile: "ben.mp4",
+    features: ["Construction", "Masonry", "Durability"]
+  },
+  {
+    icon: Home, // residential concrete
+    title: "Concrete Works Residential",
+    description: "Professional concrete work with skilled workers delivering durable, high-quality foundations, slabs, and structures for residential, commercial, and industrial projects.",
+    color: "from-emerald-400 to-green-600",
+    videoFile: "ben2.mp4",
+    features: ["Construction", "Masonry", "Durability"]
+  },
+  {
+    icon: Link, // steel fixers
+    title: "Steel Fixers Work",
+    description: "Expert steel fixing services for reinforced concrete structures, ensuring precise placement, strong reinforcement, and structural stability in construction projects.",
+    color: "from-red-500 to-rose-600",
+    videoFile: "fixers.mp4",
+    features: ["Reinforcement", "Construction", "Durability"]
+  },
+  {
+    icon: Ruler, // shuttering carpenter
+    title: "Shuttering Carpenter Work",
+    description: "Skilled shuttering carpenters providing precise formwork for concrete structures, ensuring accurate alignment, durability, and high-quality construction finishes.",
+    color: "from-amber-400 to-yellow-600",
+    videoFile: "car2.mp4",
+    features: ["Carpentry", "Formwork", "Construction"]
+  },
+  {
+    icon: LayoutGrid, // construction shuttering
+    title: "Construction Shuttering Carpenter Work",
+    description: "Experienced shuttering carpenters delivering precise formwork for concrete structures, ensuring durability, accuracy, and high-quality finishes in construction projects.",
+    color: "from-orange-500 to-red-500",
+    videoFile: "def2.mp4",
+    features: ["Carpentry", "Formwork", "Construction"]
   }
+  ,
+  {
+    icon: Layers, // steel fixers & fabrication
+    title: "Steel Fixers & Fabrication Work",
+    description: "Skilled steel fixers and fabricators providing precise reinforcement placement and custom steel fabrication for durable and high-quality construction structures.",
+    color: "from-rose-500 to-fuchsia-600",
+    videoFile: "conn.mp4",
+    features: ["Reinforcement", "Fabrication", "Construction"]
+  },
+  {
+    icon: Boxes, // skilled warehouse labor
+    title: "Skilled Warehouse Labor",
+    description: "Available skilled labor for all warehouse categories, providing efficient and safe handling of loading, unloading, sorting, packaging, inventory management, and overall warehouse operations.",
+    color: "from-emerald-400 to-teal-600",
+    videoFile: "war.mp4",
+    features: ["Logistics", "Handling", "Warehouse"]
+  },
+  {
+    icon: PackageCheck, // warehouse assistants
+    title: "Skilled & Non-Skilled Warehouse Assistants",
+    description: "We provide skilled and non-skilled warehouse assistants for efficient handling, organizing, loading, unloading, sorting, and managing inventory across all warehouse operations.",
+    color: "from-amber-400 to-orange-500",
+    videoFile: "ware.mp4",
+    features: ["Logistics", "Handling", "Warehouse"]
+  },
+  {
+    icon: Settings, // factory workers
+    title: "Skilled & Courageous Factory Workers",
+    description: "We provide skilled and courageous factory workers, trained to handle machinery, manage production tasks, and carry out industrial operations efficiently, safely, and with high reliability.",
+    color: "from-orange-500 to-red-500",
+    videoFile: "heat.mp4",
+    features: ["Manufacturing", "Labor", "Industrial"]
+  },
+  {
+    icon: Factory, // manufacturing workers
+    title: "Manufacturing Factory Workers",
+    description: "Skilled manufacturing factory workers available to efficiently handle production processes, operate machinery, assemble products, and maintain quality standards in industrial environments.",
+    color: "from-indigo-400 to-purple-600",
+    videoFile: "fac.mp4",
+    features: ["Manufacturing", "Production", "Industrial"]
+  },
+  {
+    icon: Recycle, // plastic factory
+    title: "Skilled Workers for Plastic Factory",
+    description: "Trained and experienced workers available for plastic factory operations, including molding, extrusion, assembly, quality control, and efficient production management.",
+    color: "from-teal-400 to-emerald-500",
+    videoFile: "green.mp4",
+    features: ["Manufacturing", "Plastic", "Production"]
+  },
+  {
+    icon: Sun, // solar manpower
+    title: "Skilled Manpower for Solar Plants",
+    description: "Available skilled manpower for solar plant projects in Al Qassim and Al Raj, Saudi Arabia, handling installation, maintenance, wiring, and operational support efficiently and safely.",
+    color: "from-sky-400 to-blue-600",
+    videoFile: "sol.mp4",
+    features: ["Renewable", "Electrical", "Installation"]
+  }
+  
 ];
 
 
