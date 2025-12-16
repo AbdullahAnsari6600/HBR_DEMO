@@ -552,9 +552,9 @@ const projects = [
   },
   {
     id: 11,
-    title: "Al-Ajlan Company Works",
+    title: "Al-Ajllan Company Works",
     category: "Heavy Sheds",
-    description: "HBR-World Manpower Supply and Contracting Company supplied skilled and semi skilled manpower to Al Ajlan Company for the fabrication and installation of parking sheds in Riyadh, KSA. The project scope included structural steel fabrication, welding, painting, and complete installation works, ensuring strength, durability, and long service performance",
+    description: "HBR-World Manpower Supply and Contracting Company supplied skilled and semi skilled manpower to Al Ajllan Company for the fabrication and installation of parking sheds in Riyadh, KSA. The project scope included structural steel fabrication, welding, painting, and complete installation works, ensuring strength, durability, and long service performance",
     scope: ["Steel fabrication", "Welding works", "Painting", "Installation"],
     image: "/pro11.webp",
   },
