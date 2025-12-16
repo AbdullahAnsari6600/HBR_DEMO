@@ -351,8 +351,9 @@ const contactInfo = [
   },
 ];
 const whatsappMessage = encodeURIComponent(
-  "Hello Dear Abu Hamdan,\n\nGreetings from HBR World. I would like to get connected with you to discuss your services and possible cooperation.\n\nKindly let me know your availability.\n\nBest regards."
+  "Hello Dear Abu Hamdan,\n\nI hope this message finds you well. I am interested in your services and would like to connect with you for further discussion.\n\nPlease let me know a convenient time to talk.\n\nKind regards."
 );
+
 
 
 const Contact = () => {
