@@ -350,7 +350,9 @@ const contactInfo = [
     action: null,
   },
 ];
-
+const whatsappMessage = encodeURIComponent(
+  "Hello Dear Abu Hamdan,\n\nGreetings from HBR World. I would like to get connected with you to discuss your services and possible cooperation.\n\nKindly let me know your availability.\n\nBest regards."
+);
 
 
 const Contact = () => {
@@ -449,6 +451,8 @@ const Contact = () => {
             </div>
           </div>
         </section>
+
+        
 
         {/* Contact Form & Quick Actions */}
         <section className="py-20 bg-gradient-to-b from-background to-secondary/30">
@@ -556,17 +560,18 @@ const Contact = () => {
                       {t("contact.quickActions.title")}
                     </h3>
                     <div className="grid grid-cols-3 gap-4">
-                      <a
-                        href="https://wa.me/966556468481"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex flex-col items-center gap-2 p-4 rounded-xl bg-green-500/10 hover:bg-green-500/20 transition-colors group"
-                      >
-                        <MessageCircle className="w-8 h-8 text-green-500 group-hover:scale-110 transition-transform" />
-                        <span className="text-sm font-medium text-foreground">
-                          {t("contact.quickActions.whatsapp")}
-                        </span>
-                      </a>
+                    <a
+  href={`https://wa.me/966556468481?text=${whatsappMessage}`}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex flex-col items-center gap-2 p-4 rounded-xl bg-green-500/10 hover:bg-green-500/20 transition-colors group"
+>
+  <MessageCircle className="w-8 h-8 text-green-500 group-hover:scale-110 transition-transform" />
+  <span className="text-sm font-medium text-foreground">
+    {t("contact.quickActions.whatsapp")}
+  </span>
+</a>
+
                       <a
                         href="tel:+966556468481"
                         className="flex flex-col items-center gap-2 p-4 rounded-xl bg-primary/10 hover:bg-primary/20 transition-colors group"
