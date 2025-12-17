@@ -705,6 +705,14 @@ const services = [
     features: ["Precision", "Strength", "Certified"]
   },
   {
+    icon: Warehouse, // scaffolding / site work
+    title: "Safety Supervisor & Safety Officer",
+    description: "Certified safety supervisors and safety officers are available with us, holding all legally required certifications and official approvals. They are experienced in enforcing safety regulations, conducting risk assessments, monitoring site activities, and ensuring a safe and compliant.",
+    color: "from-lime-400 to-lime-600",
+    videoFile: "saf.mp4",
+    features: ["Certified", "Compliant", "Reliable"]
+  },
+  {
     icon: PackageCheck, // warehouse assistants
     title: "Armco Oil Tank Heavy Welding",
     description: "Our experienced welders group delivers heavy welding works for Armco oil tanks, handling thick plates and complex joints with high precision, strength, and strict adherence to oil & gas safety and quality standards.",
