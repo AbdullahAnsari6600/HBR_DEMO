@@ -422,7 +422,7 @@ const services = [
   },
   {
     icon: Grid2X2, // tiles / flooring
-    title: "Marble & Tiles Installation Work",
+    title: "Marble and Tiles Installation Works -Industrial & Residential ",
     description: "High-quality marble and tile installation work ensuring precise alignment, elegant finishes, and long-lasting flooring and wall surfaces.",
     color: "from-amber-400 to-amber-600",
     videoFile: "tiles.mp4",
@@ -439,7 +439,7 @@ const services = [
   {
     icon: Flame, // MIG welding
     title: "MIG Welding for Heavy-Duty Works",
-    description: "High-quality MIG welding for heavy-duty industrial and residential works delivering strong joints, high load capacity, and durable industrial fabrication results.",
+    description: "High-quality 3G ,4G ,5G ,6G Uphill and downhill , MIG welding for heavy-duty industrial and residential works delivering strong joints, high load capacity, and durable industrial fabrication results.",
     color: "from-orange-500 to-red-600",
     videoFile: "mig.mp4",
     features: ["Welding", "HeavyDuty", "Fabrication"]
@@ -609,6 +609,108 @@ const services = [
     color: "from-sky-400 to-blue-600",
     videoFile: "sol.mp4",
     features: ["Renewable", "Electrical", "Installation"]
+  },{
+    icon: Home, // solar manpower
+    title: "Skilled Finishing Carpenter",
+    description: "Skilled finishing carpenters delivering precise, high-quality woodwork for interiors and fit-out projects. Expertise in doors, cabinets, furniture, and detailed finishing with a focus on durability",
+    color: "from-orange-500 to-red-500",
+    videoFile: "car.mp4",
+    features: ["Carpentry", "Finishing", "Precision"]
+  },
+  {
+    icon: Construction, // scaffolding / site work
+    title: "Finishing Carpenter Works",
+    description: "Finishing Carpenter works and Skilled workers available with us to provide the vest service to the clients with their Ideas and Themes.",
+    color: "from-lime-400 to-lime-600",
+    videoFile: "door.mp4",
+    features: ["Indoor", "Outdoor", "Industrials"]
+  },
+  {
+    icon: Factory, 
+    title: "Factory Aluminium Fabricator ",
+    description: "Experienced factory aluminium fabricators available with us, delivering high-quality fabrication for industrial and commercial applications.",
+    color: "from-indigo-400 to-purple-600",
+    videoFile: "alu.mp4",
+    features: ["assembly", "Fabrication", "Aluminium"]
+  },
+  {
+    icon: Factory, 
+    title: "Skilled Aluminium Fabricator ",
+    description: "Experienced factory aluminium fabricators available with us, delivering high-quality fabrication for industrial and commercial applications.",
+    color: "from-blue-400 to-blue-600",
+    videoFile: "alu2.mp4",
+    features: ["Fabrication", "Industrial", "Aluminium"]
+  },
+  {
+    icon: User, 
+    title: "Safety Helmets Supply",
+    description: "We supply complete safety helmets and protective equipment for laborers, site inspectors, firefighters, safety officers, female workers, managers, and engineers, ensuring full compliance with site safety standards.",
+    color: "from-red-400 to-red-600",
+    videoFile: "hel.mp4",
+    features: ["Safety", "Protection", "Compliance"]
+  },
+  {
+    icon: Settings, 
+    title: "Skilled Silicone Fitters",
+    description: "Skilled silicone fitters available with us, experienced in sealing, glazing, façade joints, expansion joints, and waterproof silicone applications for residential, commercial, and industrial projects.",
+    color: "from-green-400 to-green-600",
+    videoFile: "sil.mp4",
+    features: ["Sealing", "Waterproofing", "Precision"]
+  },{
+    icon: Wrench, 
+    title: "Water Drainage Work",
+    description: "Experienced manpower available in Riyadh city for water drainage works, including surface water removal, trench drainage, pipeline installation, and site dewatering, ensuring smooth water flow and flood-free sites.",
+    color: "from-blue-400 to-blue-600",
+    videoFile: "dra.mp4",
+    features: ["Drainage", "Dewatering", "Safety"]
+  },
+  {
+    icon: Construction, // scaffolding / site work
+    title: "Stone Work for various purpose and Skilled Workers",
+    description: "We provide expert crazy stone installation services with skilled workers, delivering durable, decorative, and high-quality stone finishes for pathways, landscaping, and exterior surfaces.",
+    color: "from-lime-400 to-lime-600",
+    videoFile: "sto.mp4",
+    features: ["Indoor", "Outdoor", "Industrials"]
+  },
+  {
+    icon: Boxes, // scaffolding / site work
+    title: "Air Conditioning Installation & Maintenance Services",
+    description: "We provide reliable air conditioning installation and maintenance services with skilled technicians available in our company, ensuring efficient cooling and proper installation.",
+    color: "from-lime-400 to-lime-600",
+    videoFile: "ac.mp4",
+    features: ["Cooling", "Efficiency", "Reliability"]
+  },
+  {
+    icon: Factory, // scaffolding / site work
+    title: "Fencing Work Services",
+    description: "We provide professional fencing work across Saudi Arabia, including installation and maintenance of durable fencing solutions for residential, commercial, industrial, and construction sites, ensuring security and safety",
+    color: "from-blue-400 to-blue-600",
+    videoFile: "en.mp4",
+    features: ["Security", "Durability", "Protection"]
+  },
+  {
+    icon: Boxes, // scaffolding / site work
+    title: "Construction Pipeline Welding Services",
+    description: "Our construction pipeline welding services are carried out by highly skilled and certified welders, ensuring strong joints, precision alignment, and long-term durability for industrial and infrastructure projects.",
+    color: "from-lime-400 to-lime-600",
+    videoFile: "welding.mp4",
+    features: ["Precision", "Strength", "Compliance"]
+  },
+  {
+    icon: Construction, // scaffolding / site work
+    title: "6G Welding Work",
+    description: "Our 6G welding work is carried out by highly skilled and certified welders, delivering exceptional joint strength, precise workmanship, and reliable performance. All welding activities are executed in full compliance with industrial and commercial standards.",
+    color: "from-orange-400 to-orange-600",
+    videoFile: "6ggg.mp4",
+    features: ["Precision", "Strength", "Certified"]
+  },
+  {
+    icon: PackageCheck, // warehouse assistants
+    title: "Armco Oil Tank Heavy Welding",
+    description: "Our experienced welders group delivers heavy welding works for Armco oil tanks, handling thick plates and complex joints with high precision, strength, and strict adherence to oil & gas safety and quality standards.",
+    color: "from-amber-400 to-orange-500",
+    videoFile: "ara.mp4",
+    features: ["Heavy-Duty", "Precision", "Certified"]
   }
   
 ];
