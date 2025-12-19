@@ -349,7 +349,7 @@ const services = [
     title: "Low & High Voltage Cable Termination Works",
     description: "Low and high voltage cable termination services ensuring secure connections, proper insulation, and safe power transmission for various purposes.",
     color: "from-blue-400 to-blue-500",
-    videoFile: "wire.mp4",
+    videoFile: "volt.mp4",
     features: [
       "LV Cable Termination",
       "HV Cable Termination",
@@ -382,39 +382,30 @@ const services = [
   },
   {
     icon: ShieldCheck, // safety / compliance
-    title: "Scaffolding Work & TÜV Certified Workers",
-    description: "Professional scaffolding work provided by TÜV certified workers, ensuring safe access, stability, and compliance for construction and industrial sites.",
+    title: "Scaffolding Work",
+    description: "Professional scaffolding work provided by certified workers, ensuring safe access, stability, and compliance for construction and industrial sites.",
     color: "from-emerald-400 to-emerald-600",
     videoFile: "scaff.mp4",
     features: ["Safety", "Access", "Compliance"]
   },
   {
-    icon: PaintRoller, // painting
-    title: "Indoor & Outdoor Roller / Spray Painting Work",
+    icon: Paintbrush2, // painting
+    title: "Indoor & Outdoor Spray Painting Work",
     description: "High-quality indoor and outdoor roller and spray painting delivering smooth finishes, uniform coverage, and long-lasting protection.",
-    color: "from-sky-400 to-sky-600",
+    color: "from-rose-400 to-rose-600",
     videoFile: "painti.mp4",
     features: ["Painting", "Finishing", "Coating"]
-  },
-  {
-    icon: Construction, // scaffolding / site work
-    title: "Scaffolding Work & TÜV Certified Workers",
-    description: "Professional scaffolding work provided by TÜV certified workers, ensuring safe access, stability, and compliance for construction and industrial sites.",
+  },{
+    icon: ShieldCheck, // safety / compliance
+    title: "Scaffolding Manpower",
+    description: "Professional scaffolding manpower provided by HBR-WORLD, ensuring safe access, stability, and compliance for construction and industrial sites.",
     color: "from-lime-400 to-lime-600",
     videoFile: "scaff2.mp4",
     features: ["Safety", "Access", "Compliance"]
   },
   {
-    icon: Paintbrush2, // painting
-    title: "Indoor & Outdoor Roller / Spray Painting Work",
-    description: "High-quality indoor and outdoor roller and spray painting delivering smooth finishes, uniform coverage, and long-lasting protection.",
-    color: "from-rose-400 to-rose-600",
-    videoFile: "painti.mp4",
-    features: ["Painting", "Finishing", "Coating"]
-  },
-  {
     icon: SprayCan, // industrial painting
-    title: "Indoor & Outdoor Roller / Spray Painting Work (Industrial)",
+    title: "Indoor & Outdoor Roller Painting Work (Industrial)",
     description: "High-quality indoor and outdoor roller or spray painting work delivering smooth finishes, uniform coverage, and long-lasting surface protection.",
     color: "from-violet-400 to-violet-600",
     videoFile: "paint2.mp4",
@@ -455,7 +446,7 @@ const services = [
   {
     icon: PaintRoller, // maintenance
     title: "Maintenance Works",
-    description: "Reliable maintenance works covering electrical, plumbing, civil, and general repairs to ensure smooth and uninterrupted facility operations.",
+    description: "We provide reliable maintenance services covering electrical, plumbing, civil, and general repair works to ensure smooth, safe, and uninterrupted facility operations to extend the life.",
     color: "from-indigo-500 to-indigo-700",
     videoFile: "mai.mp4",
     features: ["Repair", "Services", "Facilities"]
@@ -516,7 +507,7 @@ const services = [
   {
     icon: Blocks, // concrete work
     title: "Concrete Work & Skilled Concrete Workers",
-    description: "Professional concrete work with skilled workers delivering durable, high-quality foundations, slabs, and structures for residential, commercial, and industrial projects.",
+    description: "Professional concrete work with skilled workers delivering durable, high-quality foundations, slabs, and structures for residential and industrial projects.",
     color: "from-lime-400 to-emerald-500",
     videoFile: "ben.mp4",
     features: ["Construction", "Masonry", "Durability"]
@@ -530,7 +521,7 @@ const services = [
     features: ["Construction", "Masonry", "Durability"]
   },
   {
-    icon: Link, // steel fixers
+    icon: Blocks, // steel fixers
     title: "Steel Fixers Work",
     description: "Expert steel fixing services for reinforced concrete structures, ensuring precise placement, strong reinforcement, and structural stability in construction projects.",
     color: "from-red-500 to-rose-600",
@@ -548,7 +539,7 @@ const services = [
   {
     icon: LayoutGrid, // construction shuttering
     title: "Construction Shuttering Carpenter Work",
-    description: "Experienced shuttering carpenters delivering precise formwork for concrete structures, ensuring durability, accuracy, and high-quality finishes in construction projects.",
+    description: "Experienced shuttering carpenters delivering precise formwork for concrete structures, ensuring durability, accuracy, and high-quality finishes.",
     color: "from-orange-500 to-red-500",
     videoFile: "def2.mp4",
     features: ["Carpentry", "Formwork", "Construction"]
@@ -573,7 +564,7 @@ const services = [
   {
     icon: PackageCheck, // warehouse assistants
     title: "Skilled & Non-Skilled Warehouse Assistants",
-    description: "We provide skilled and non-skilled warehouse assistants for efficient handling, organizing, loading, unloading, sorting, and managing inventory across all warehouse operations.",
+    description: "We provide skilled and non-skilled warehouse assistants for efficient handling, organizing, loading, unloading, sorting, and managing inventory.",
     color: "from-amber-400 to-orange-500",
     videoFile: "ware.mp4",
     features: ["Logistics", "Handling", "Warehouse"]
@@ -644,7 +635,7 @@ const services = [
   {
     icon: User, 
     title: "Safety Helmets Supply",
-    description: "We supply complete safety helmets and protective equipment for laborers, site inspectors, firefighters, safety officers, female workers, managers, and engineers, ensuring full compliance with site safety standards.",
+    description: "We supply complete safety helmets and protective equipment for laborers, site inspectors, firefighters, safety officers, managers etc..",
     color: "from-red-400 to-red-600",
     videoFile: "hel.mp4",
     features: ["Safety", "Protection", "Compliance"]
@@ -659,7 +650,7 @@ const services = [
   },{
     icon: Wrench, 
     title: "Water Drainage Work",
-    description: "Experienced manpower available in Riyadh city for water drainage works, including surface water removal, trench drainage, pipeline installation, and site dewatering, ensuring smooth water flow and flood-free sites.",
+    description: "Experienced manpower available in Riyadh city for water drainage works, including surface water removal, trench drainage, pipeline installation, and site dewatering, ensuring smooth water flow.",
     color: "from-blue-400 to-blue-600",
     videoFile: "dra.mp4",
     features: ["Drainage", "Dewatering", "Safety"]
@@ -667,7 +658,7 @@ const services = [
   {
     icon: Construction, // scaffolding / site work
     title: "Stone Work for various purpose and Skilled Workers",
-    description: "We provide expert crazy stone installation services with skilled workers, delivering durable, decorative, and high-quality stone finishes for pathways, landscaping, and exterior surfaces.",
+    description: "We provide expert crazy stone installation services with skilled workers, delivering durable, decorative, and high-quality stone finishes.",
     color: "from-lime-400 to-lime-600",
     videoFile: "sto.mp4",
     features: ["Indoor", "Outdoor", "Industrials"]
@@ -719,6 +710,21 @@ const services = [
     color: "from-amber-400 to-orange-500",
     videoFile: "ara.mp4",
     features: ["Heavy-Duty", "Precision", "Certified"]
+  },{
+    icon: Layers, // steel fixers & fabrication
+    title: "Interlock Installation Work",
+    description: "Our skilled team ensures proper base preparation, precise alignment, and durable finishing for long-lasting performance and an attractive appearance. Suitable for residential, commercial, and roadway applications.",
+    color: "from-blue-500 to-blue-600",
+    videoFile: "inter.mp4",
+    features: ["Indoor", "Road Projects", "Walkways"]
+  },
+  {
+    icon: Warehouse, // scaffolding / site work
+    title: "Underground Cable Pulling & Termination Work",
+    description: "Our skilled technicians ensure safe cable routing, proper jointing, accurate termination, and full compliance with electrical and safety standards for reliable and long-term performance.",
+    color: "from-lime-400 to-lime-600",
+    videoFile: "cab.mp4",
+    features: ["Industrial Projects", "Commercial Buildings", "Infrastructure & Utility Works"]
   }
   
 ];
@@ -729,7 +735,7 @@ const Services = () => {
   const { t } = useLanguage();
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen" dir="ltr">
       <Navbar />
 
       <main className="pt-20">

@@ -34,10 +34,13 @@ export const HeroSection = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-8 animate-zoom-in">
+          {/* <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-8 animate-zoom-in">
             <Sparkles className="w-4 h-4 text-primary" />
             <span className="text-sm font-medium text-primary">{t("Trusted Partner in Saudi Arabia")}</span>
-          </div>
+          </div> */}
+          <span className="text-sm font-medium text-primary">
+            {t("home.hero.badge")}
+          </span>
 
           {/* Company Name */}
           <h1 className="font-display font-bold text-5xl md:text-6xl lg:text-7xl mb-6 animate-slide-in-left">
@@ -45,21 +48,29 @@ export const HeroSection = () => {
           </h1>
 
           {/* Main Title */}
-          <h2
+          {/* <h2
             className="font-display font-semibold text-2xl md:text-3xl lg:text-4xl text-foreground mb-6 animate-slide-in-right"
             style={{ animationDelay: "0.1s" }}
           >
             {t("Trusted Contracting & Manpower Solutions")}
             <span className="block text-primary">{t("Across Saudi Arabia")}</span>
+          </h2> */}
+          <h2 className="font-display font-semibold text-2xl md:text-3xl lg:text-4xl text-foreground mb-6">
+            {t("home.hero.title")}
+            <span className="block text-primary">
+            {t("home.hero.subtitle")}
+            </span>
           </h2>
 
           {/* Subtitle */}
-          <p
+          {/* <p
             className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-zoom-in"
             style={{ animationDelay: "0.2s" }}
           >
             {t("Delivering Excellence in Civil Construction & Professional Manpower Supply.")}
-          </p>
+          </p> */}
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10">
+          {t("home.hero.description")}  </p>
 
           {/* CTA Buttons */}
           <div
@@ -67,13 +78,10 @@ export const HeroSection = () => {
             style={{ animationDelay: "0.3s" }}
           >
             <Button variant="hero" size="xl" asChild>
-              <Link to="/services">
-                {t("Explore Services")}
-                <ArrowRight className="w-5 h-5 ml-1" />
-              </Link>
+            <Link to="/services">{t("home.hero.primaryCta")}</Link>
             </Button>
             <Button variant="glass" size="xl" asChild>
-              <Link to="/contact">{t("Contact Us")}</Link>
+            <Link to="/contact">{t("home.hero.secondaryCta")}</Link>
             </Button>
           </div>
 
@@ -82,7 +90,7 @@ export const HeroSection = () => {
             className="mt-16 flex flex-wrap items-center justify-center gap-8 text-muted-foreground animate-zoom-in"
             style={{ animationDelay: "0.4s" }}
           >
-            <div className="flex items-center gap-2">
+            {/* <div className="flex items-center gap-2">
               <div className="w-2 h-2 rounded-full bg-green-500" />
               <span className="text-sm">{t("Quality Certified")}</span>
             </div>
@@ -93,7 +101,10 @@ export const HeroSection = () => {
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 rounded-full bg-green-500" />
               <span className="text-sm">{t("24/7 Support")}</span>
-            </div>
+            </div> */}
+            <span className="text-sm">{t("home.hero.trust.quality")}</span>
+            <span className="text-sm">{t("home.hero.trust.approved")}</span>
+            <span className="text-sm">{t("home.hero.trust.support")}</span>
           </div>
         </div>
       </div>

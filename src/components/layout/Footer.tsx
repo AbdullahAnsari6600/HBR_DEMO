@@ -41,7 +41,7 @@ export const Footer = () => {
   };
 
   return (
-    <footer className="relative bg-gradient-to-br from-navy-medium to-navy-dark text-primary-foreground">
+    <footer  dir="ltr" className="relative bg-gradient-to-br from-navy-medium to-navy-dark text-primary-foreground">
       {/* Decorative Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-0 left-0 w-96 h-96 bg-sky-medium/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />

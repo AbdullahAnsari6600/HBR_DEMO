@@ -9,45 +9,46 @@ const stats = [
     icon: Building2,
     value: 200,
     suffix: "+",
-    label: "Projects Completed",
+    label: "home.stats.projects",
     color: "from-sky-medium to-sky-dark",
   },
   {
     icon: Users,
     value: 3000,
     suffix: "+",
-    label: "Skilled Workers Provided",
+    label: "home.stats.workers",
     color: "from-primary to-navy-light",
   },
   {
     icon: Briefcase,
     value: 8,
     suffix: "",
-    label: "Ongoing Projects",
+    label: "home.stats.ongoing",
     color: "from-sky-dark to-navy-medium",
   },
   {
     icon: Calendar,
     value: 13,
     suffix: "+",
-    label: "Years of Experience",
+    label: "home.stats.experience",
     color: "from-navy-light to-navy-dark",
   },
   {
     icon: Smile,
     value: 200,
     suffix: "+",
-    label: "Happy Clients",
+    label: "home.stats.clients",
     color: "from-sky-light to-sky-medium",
   },
   {
     icon: HardHat,
     value: 4000,
     suffix: "+",
-    label: "Total Manpower Deployed",
+    label: "home.stats.manpower",
     color: "from-primary to-sky-dark",
   },
 ];
+
 
 export const StatsSection = () => {
   const { t } = useLanguage();
@@ -63,13 +64,15 @@ export const StatsSection = () => {
       <div className="container mx-auto px-4 relative z-10">
         <ScrollReveal>
           <div className="text-center mb-16">
-            <span className="text-primary font-semibold text-sm uppercase tracking-wider">{t("Our Achievements")}</span>
+          <span className="text-primary font-semibold text-sm uppercase tracking-wider">
+            {t("home.statsSection.badge")}
+            </span>
             <h2 className="font-display font-bold text-3xl md:text-4xl lg:text-5xl mt-4 mb-6">
-              {t("Numbers That Speak")}
-            </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              {t("A legacy of excellence, built one successful project at a time")}
-            </p>
+  {t("home.statsSection.title")}
+</h2>
+<p className="text-muted-foreground max-w-2xl mx-auto">
+  {t("home.statsSection.description")}
+</p>
           </div>
         </ScrollReveal>
 

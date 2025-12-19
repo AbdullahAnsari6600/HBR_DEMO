@@ -24,22 +24,231 @@
     "returnHome": "Return to Home"
   },
 
-  "home": {
-    "hero": {
-      "badge": "Trusted Partner in Saudi Arabia",
-      "title": "Trusted Contracting & Manpower Solutions",
-      "subtitle": "Across Saudi Arabia",
-      "description": "Delivering Excellence in Civil, MEP, Fit-Out Works & Professional Manpower Supply.",
-      "primaryCta": "Explore Services",
-      "secondaryCta": "Contact Us"
-    },
-    "stats": {
-      "projects": "Projects Completed",
-      "workers": "Skilled Workers Provided",
-      "ongoing": "Ongoing Projects",
-      "experience": "Years of Experience"
+ "home": {
+  "hero": {
+    "badge": "Trusted Partner in Saudi Arabia",
+    "title": "Trusted Contracting & Manpower Solutions",
+    "subtitle": "Across Saudi Arabia",
+    "description": "Delivering Excellence in Civil Construction & Professional Manpower Supply.",
+    "primaryCta": "Explore Services",
+    "secondaryCta": "Contact Us",
+    "trust": {
+      "quality": "Quality Certified",
+      "approved": "Trusted & Approved",
+      "support": "24/7 Support"
     }
   },
+
+  "statsSection": {
+    "badge": "Our Achievements",
+    "title": "Numbers That Speak",
+    "description": "A legacy of excellence, built one successful project at a time"
+  },
+
+  "stats": {
+    "projects": "Projects Completed",
+    "workers": "Skilled Workers Provided",
+    "ongoing": "Ongoing Projects",
+    "experience": "Years of Experience",
+    "clients": "Happy Clients",
+    "manpower": "Total Manpower Deployed"
+  },
+  "services": {
+  "badge": "What We Offer",
+  "title": "Comprehensive Services",
+  "description": "From construction to manpower, we provide end-to-end solutions for all your project needs",
+  "viewAll": "View All Services",
+
+  "items": {
+    "civil": {
+      "title": "Civil Construction",
+      "description": "Complete structural and civil engineering solutions for commercial and residential projects."
+    },
+    "fitout": {
+      "title": "Interior Fit-Out",
+      "description": "Premium interior finishing and fit-out services for modern spaces."
+    },
+    "glass": {
+      "title": "Exterior Glass Fitting",
+      "description": "Stunning exterior cladding, facades, and finishing solutions."
+    },
+    "electrical": {
+      "title": "Electrical Works",
+      "description": "Complete electrical installations, maintenance, and smart systems."
+    },
+    "plumbing": {
+      "title": "Plumbing Works",
+      "description": "Professional plumbing installations and water management systems."
+    },
+    "mechanical": {
+      "title": "Mechanical Works",
+      "description": "Advanced mechanical engineering and equipment installation services."
+    },
+    "hvac": {
+      "title": "HVAC Services",
+      "description": "Climate control solutions for optimal comfort and energy efficiency."
+    },
+    "maintenance": {
+      "title": "Facility Maintenance",
+      "description": "Comprehensive facility management and maintenance services."
+    },
+    "renovation": {
+      "title": "Renovation Works",
+      "description": "Complete renovation and refurbishment of existing structures."
+    },
+    "manpower": {
+      "title": "Manpower Supply",
+      "description": "Skilled, semi-skilled, and general workforce solutions."
+    },
+    "safety": {
+      "title": "Safety & Compliance",
+      "description": "HSE management and regulatory compliance services."
+    },
+    "industrial": {
+      "title": "Industrial Support",
+      "description": "Industrial facility support and operational assistance."
+    }
+  }
+}, "manpower": {
+  "badge": "Global Manpower",
+  "title": "Local & International Workforce Solutions",
+  "description": "We supply reliable male and female manpower across Saudi Arabia, Malaysia, Qatar, Bahrain, and Bangladesh to meet your project requirements with speed, compliance, and quality.",
+
+  "features": {
+    "international": {
+      "title": "International Recruitment",
+      "description": "Manpower sourced from multiple countries based on project-specific requirements."
+    },
+    "gender": {
+      "title": "Male & Female Workforce",
+      "description": "Availability of skilled, semi-skilled, and unskilled male and female manpower."
+    },
+    "verified": {
+      "title": "Verified & Compliant",
+      "description": "Legally compliant, trained, certified, and project-ready workforce."
+    }
+  },
+
+  "countries": {
+    "nepal": {
+      "name": "Nepal",
+      "type": "Local & General Workforce"
+    },
+    "india": {
+      "name": "India",
+      "type": "Skilled & Semi-Skilled Manpower"
+    },
+    "pakistan": {
+      "name": "Pakistan",
+      "type": "Technical & Labor Workforce"
+    },
+    "bangladesh": {
+      "name": "Bangladesh",
+      "type": "Construction Workforce"
+    },
+    "philippines": {
+      "name": "Philippines",
+      "type": "Professional & Administrative Staff"
+    }
+  }
+}, "timeline": {
+  "badge": "Our Process",
+  "title": "From Vision to Reality",
+  "description": "A streamlined approach that ensures project excellence at every stage.",
+
+  "steps": {
+    "planning": {
+      "title": "Planning",
+      "description": "Strategic project planning and detailed requirement analysis."
+    },
+    "designing": {
+      "title": "Designing",
+      "description": "Creative design solutions with accurate technical drawings."
+    },
+    "execution": {
+      "title": "Execution",
+      "description": "Professional implementation with strict quality control."
+    },
+    "testing": {
+      "title": "Testing",
+      "description": "Comprehensive testing and quality assurance procedures."
+    },
+    "delivery": {
+      "title": "Delivery",
+      "description": "On-time project completion and smooth handover."
+    },
+    "support": {
+      "title": "Support",
+      "description": "Ongoing maintenance, assistance, and 24/7 support services."
+    }
+  },
+
+  "tagline": "Building Tomorrow, Delivering Today"
+}, "whyChoose": {
+  "badge": "Why Choose Us",
+  "title": "The HBR World Advantage",
+  "description": "Experience the difference that comes with working alongside trusted industry professionals.",
+
+  "features": {
+    "onTime": {
+      "title": "On-Time Delivery",
+      "description": "We consistently deliver projects within committed timelines without compromising quality."
+    },
+    "certified": {
+      "title": "Certified Manpower",
+      "description": "Our workforce is professionally trained, certified, and experienced across multiple industries."
+    },
+    "costEffective": {
+      "title": "Cost-Effective Solutions",
+      "description": "Transparent pricing, competitive rates, and no hidden costs for complete peace of mind."
+    },
+    "safety": {
+      "title": "High Safety Standards",
+      "description": "Strict adherence to international safety regulations and best HSE practices on all sites."
+    },
+    "quality": {
+      "title": "Premium Quality",
+      "description": "We use proven methods, quality materials, and modern techniques to ensure lasting excellence."
+    },
+    "support": {
+      "title": "24/7 Customer Support",
+      "description": "Round-the-clock assistance and quick response to support your business whenever needed."
+    }
+  }
+},
+
+"faq": {
+  "badge": "FAQ",
+  "title": "Frequently Asked Questions",
+  "description": "Find clear answers to common questions about our services, manpower, and operations.",
+
+  "items": {
+    "services": {
+      "question": "What services does HBR World provide?",
+      "answer": "HBR World provides comprehensive contracting services including civil construction, interior and exterior fit-out, MEP works (electrical, plumbing, mechanical, HVAC), facility maintenance, renovation works, and professional manpower supply across Saudi Arabia."
+    },
+    "locations": {
+      "question": "Which areas in Saudi Arabia do you operate in?",
+      "answer": "We operate across all major cities in Saudi Arabia, including Riyadh, Jeddah, Dammam, Makkah, Madinah, and other key industrial and commercial regions throughout the Kingdom."
+    },
+    "manpower": {
+      "question": "What types of manpower can you supply?",
+      "answer": "We supply skilled, semi-skilled, and general manpower including engineers, technicians, welders, operators, safety officers, drivers, helpers, and specialized construction professionals. All manpower is trained and legally compliant."
+    },
+    "qualitySafety": {
+      "question": "How do you ensure quality and safety on projects?",
+      "answer": "We follow strict quality control procedures, international safety standards, regular site inspections, and continuous workforce training to ensure safe and high-quality project execution."
+    },
+    "timeline": {
+      "question": "Do you guarantee project timelines?",
+      "answer": "Yes. Each project is planned with a clear timeline, and we maintain transparent communication to ensure all milestones and deliveries are completed on schedule."
+    },
+    "quotation": {
+      "question": "How can I get a quotation for my project?",
+      "answer": "You can request a quotation through our Contact page, by phone, or via email. Our team will review your requirements and provide a clear and competitive quotation within 48 hours."
+    }
+  }
+}},
 
   "about": {
     "hero": {
@@ -177,8 +386,8 @@
   "location": "HBR-World Office, Riyadh, Saudi Arabia",
   "hours": "Working Hours",
   "hoursDetails": {
-    "weekdays": "Sun - Thu: 8:00 AM - 6:00 PM",
-    "weekend": "Fri - Sat: Closed"
+    "weekdays": "Sat - Thu: 8:00 AM - 6:00 PM",
+    "weekend": "Fri : Closed"
   },
   "locationDetails": {
     "line1": "Al Olaya District, Riyadh"
