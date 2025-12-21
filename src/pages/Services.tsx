@@ -563,7 +563,7 @@ const services = [
   },
   {
     icon: PackageCheck, // warehouse assistants
-    title: "Skilled & Non-Skilled Warehouse Assistants",
+    title: "Skilled & Non-Skilled Warehouse Operator & Assistants",
     description: "We provide skilled and non-skilled warehouse assistants for efficient handling, organizing, loading, unloading, sorting, and managing inventory.",
     color: "from-amber-400 to-orange-500",
     videoFile: "ware.mp4",
