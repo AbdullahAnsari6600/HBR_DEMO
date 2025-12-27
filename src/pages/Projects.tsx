@@ -461,7 +461,7 @@ import { GlassCard } from "@/components/ui/glass-card";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
-/* ⚠️ PROJECT DATA UNCHANGED */
+
 const projects = [
   {
     id: 1,
@@ -720,7 +720,7 @@ const projects = [
     "HBR-world has successfully installed Aluminium glasses frames and external glasses.",
       scope: ["Aluminium Glass Frames", "Glasses Installation"],
     image: "/Tower.jpeg",
-  },
+  }
 ];
 
 const Projects = () => {

@@ -725,6 +725,20 @@ const services = [
     color: "from-lime-400 to-lime-600",
     videoFile: "cab.mp4",
     features: ["Industrial Projects", "Commercial Buildings", "Infrastructure & Utility Works"]
+  },{
+    icon: Wrench, 
+    title: "Industrial Skilled Manpower Support Obeikon",
+    description: "HBR-World supplied skilled industrial manpower to Obeikon Company, including MIG welders, ARC welders, grinder operators, spray painters, sandblasters, and forklift operators etc.",
+    color: "from-blue-400 to-blue-600",
+    videoFile: "migg.mp4",
+    features: ["MIG Welders", "Sand Blasters", "Forklift Operators"]
+  },{
+    icon: PackageCheck, 
+    title: "MIG & ARC Welding Manpower Support Obeikon",
+    description: "HBR-World provided skilled industrial manpower to Obeikon Company, including MIG and ARC welders, grinder operators, spray painters, sandblasters, and forklift operators.",
+    color: "from-blue-400 to-blue-600",
+    videoFile: "mig2.mp4",
+    features: ["ARC Welders", "Grinder Operators", "Heavy Weldings"]
   }
   
 ];

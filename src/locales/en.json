@@ -109,11 +109,11 @@
       "description": "Industrial facility support and operational assistance."
     }
   }
-}, "manpower": {
+} ,"manpower": {
   "badge": "Global Manpower",
   "title": "Local & International Workforce Solutions",
-  "description": "We supply reliable male and female manpower across Saudi Arabia, Malaysia, Qatar, Bahrain, and Bangladesh to meet your project requirements with speed, compliance, and quality.",
-
+  "description": "We supply male and female manpower across Saudi Arabia, Malaysia, Qatar, Bahrain, and Bangladesh.",
+  "additionalDescription": "Our skilled professionals are available through visa sponsorship, requiring a minimum three-year agreement, ensuring long-term stability and efficiency for your projects.",
   "features": {
     "international": {
       "title": "International Recruitment",
@@ -132,7 +132,7 @@
   "countries": {
     "nepal": {
       "name": "Nepal",
-      "type": "Local & General Workforce"
+      "type": "Skilled Local & General Workforce"
     },
     "india": {
       "name": "India",
@@ -140,18 +140,32 @@
     },
     "pakistan": {
       "name": "Pakistan",
-      "type": "Technical & Labor Workforce"
+      "type": "Professional Technical & Labor Specialists"
     },
     "bangladesh": {
       "name": "Bangladesh",
-      "type": "Construction Workforce"
+      "type": "Qualified Workforce for Construction Projects"
     },
     "philippines": {
       "name": "Philippines",
       "type": "Professional & Administrative Staff"
+    },
+    "srilanka": {
+      "name": "Sri Lanka",
+      "type": "Skilled Workforce for Industrial Purpose"
     }
+    
   }
-}, "timeline": {
+  
+},
+
+"gender": {
+  "male": "Male Workforce",
+  "both": "Male & Female Workforce"
+},
+
+
+"timeline": {
   "badge": "Our Process",
   "title": "From Vision to Reality",
   "description": "A streamlined approach that ensures project excellence at every stage.",
